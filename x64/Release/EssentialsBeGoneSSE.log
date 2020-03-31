@@ -1,0 +1,10 @@
+﻿  ActorIterator.cpp
+  main.cpp
+     Creating library D:\WorkSpace\skse64\x64\Release\EssentialsBeGoneSSE.lib and object D:\WorkSpace\skse64\x64\Release\EssentialsBeGoneSSE.exp
+  Generating code
+  0 of 1628 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  EssentialsBeGoneSSE.vcxproj -> D:\WorkSpace\skse64\x64\Release\EssentialsBeGoneSSE.dll
+          1 file(s) copied.
