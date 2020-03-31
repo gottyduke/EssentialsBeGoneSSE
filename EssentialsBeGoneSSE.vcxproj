@@ -27,12 +27,15 @@
     <None Include="export.def" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ActorIterator.cpp" />
+    <ClCompile Include="src\NPCIterator.cpp" />
+    <ClCompile Include="src\Exclusion.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\ActorIterator.h" />
+    <ClInclude Include="include\NPCIterator.h" />
+    <ClInclude Include="include\Exclusion.h" />
+    <ClInclude Include="include\FormManipulator.h" />
     <ClInclude Include="include\Settings.h" />
     <ClInclude Include="include\version.h" />
   </ItemGroup>

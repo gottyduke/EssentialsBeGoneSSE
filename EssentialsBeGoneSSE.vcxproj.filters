@@ -15,15 +15,18 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\ActorIterator.cpp" />
     <ClCompile Include="src\Settings.cpp" />
+    <ClCompile Include="src\Exclusion.cpp" />
+    <ClCompile Include="src\NPCIterator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\version.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\ActorIterator.h" />
     <ClInclude Include="include\Settings.h" />
+    <ClInclude Include="include\Exclusion.h" />
+    <ClInclude Include="include\FormManipulator.h" />
+    <ClInclude Include="include\NPCIterator.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="version.rc" />

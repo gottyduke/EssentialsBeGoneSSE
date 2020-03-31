@@ -1,6 +1,9 @@
-#include "ActorIterator.h"
+#include "NPCIterator.h"
+#include "FormManipulator.h"
+#include "Settings.h"
 #include "version.h"
 
+#include "RE/Skyrim.h"
 #include "SKSE/API.h"
 
 
@@ -11,7 +14,10 @@ namespace
 		switch (a_msg->type) {
 		case SKSE::MessagingInterface::kDataLoaded:
 			{
-
+				auto npcIter = NPCIterator::GetSingleton();
+				npcIter->PreloadNPCList();
+				npcIter->DumpStats();
+				TryReplaceFlag();
 				break;
 			}
 		}
@@ -64,7 +70,13 @@ extern "C" {
 			return false;
 		}
 
-		// TODO - load settings, install hooks
+		// TODO - install hooks
+		if (Settings::LoadSettings()) {
+			_MESSAGE("Settings load succesfully");
+		} else {
+			_FATALERROR("Failed to load settings! Check json file");
+			return false;
+		}
 
 		return true;
 	}
