@@ -1,5 +1,6 @@
 {
-  "heartOfFury": true,
+  "heartOfFury": false,
+  "timeToGrowUp":  false,
   "exclusionList": [
   ]
 }

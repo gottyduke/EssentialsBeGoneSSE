@@ -1,7 +1,6 @@
 #include "Settings.h"
 
 #include <sstream>
-#include <string>
 
 
 static std::stringstream converter;
@@ -35,5 +34,6 @@ bool Settings::LoadSettings(bool a_dumpParse)
 }
 
 
-decltype(Settings::heartOfFury)		Settings::heartOfFury("heartOfFury", true);
+decltype(Settings::heartOfFury)		Settings::heartOfFury("heartOfFury", false);
+decltype(Settings::timeToGrowUp)	Settings::timeToGrowUp("timeToGrowUp", false);
 decltype(Settings::exclusionList)	Settings::exclusionList("exclusionList");

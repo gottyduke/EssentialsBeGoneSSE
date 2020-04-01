@@ -13,5 +13,5 @@ namespace Exclusion
 	extern std::unordered_set<UInt32> ExcludedNPC;
 
 
-	bool IsExcluded(RE::TESNPC* a_npc);
+	bool IsExcluded(UInt32 a_formID);
 }

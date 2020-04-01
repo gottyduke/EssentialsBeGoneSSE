@@ -4,7 +4,7 @@
 #define MAKE_STR_HELPER(a_str) #a_str
 #define MAKE_STR(a_str) MAKE_STR_HELPER(a_str)
 
-#define ESBG_VERSION_MAJOR	1
+#define ESBG_VERSION_MAJOR	2
 #define ESBG_VERSION_MINOR	0
 #define ESBG_VERSION_PATCH	0
 #define ESBG_VERSION_BETA	0

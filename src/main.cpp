@@ -1,5 +1,5 @@
-#include "NPCIterator.h"
 #include "FormManipulator.h"
+#include "Events.h"
 #include "Settings.h"
 #include "version.h"
 
@@ -14,10 +14,10 @@ namespace
 		switch (a_msg->type) {
 		case SKSE::MessagingInterface::kDataLoaded:
 			{
-				auto npcIter = NPCIterator::GetSingleton();
-				npcIter->PreloadNPCList();
-				npcIter->DumpStats();
-				TryReplaceFlag();
+				// changed from preload scan manipulation to postload dynamic manipulation
+				auto sourceHolder = RE::ScriptEventSourceHolder::GetSingleton();
+				sourceHolder->AddEventSink(Events::TESObjectLoadedEventHandler::GetSingleton());
+
 				break;
 			}
 		}

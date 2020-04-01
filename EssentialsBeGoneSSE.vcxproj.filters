@@ -17,7 +17,6 @@
     </ClCompile>
     <ClCompile Include="src\Settings.cpp" />
     <ClCompile Include="src\Exclusion.cpp" />
-    <ClCompile Include="src\NPCIterator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\version.h">
@@ -26,7 +25,7 @@
     <ClInclude Include="include\Settings.h" />
     <ClInclude Include="include\Exclusion.h" />
     <ClInclude Include="include\FormManipulator.h" />
-    <ClInclude Include="include\NPCIterator.h" />
+    <ClInclude Include="include\Events.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="version.rc" />

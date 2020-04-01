@@ -15,7 +15,8 @@ public:
 
 	static bool	LoadSettings(bool a_dumpParse = false);
 
-	static J2S::bSetting				heartOfFury;
+	static J2S::bSetting				heartOfFury; // Main Quest NPC -> Protected
+	static J2S::bSetting				timeToGrowUp; // Kids -> Killable
 	static J2S::aSetting<std::string>	exclusionList;
 
 private:
